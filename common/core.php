@@ -21,7 +21,8 @@ function __autoload($className) {
       
     return false; 
 }
-
+$basecampSetting = new BasecampSetting();
+$hipchatSetting = new HipchatSetting();
 $mysql = new MysqlSetting();
 $dbFacile = new dbMysqli();
 $dbFacile->open($mysql->database, $mysql->username, $mysql->password, $mysql->host);

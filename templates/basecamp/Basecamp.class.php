@@ -413,7 +413,7 @@ class Basecamp {
     if(!preg_match('!^\d+$!',$project_id))
       throw new InvalidArgumentException("project id must be a number.");
     return $this->processRequest("{$this->baseurl}projects/{$project_id}/posts.xml","GET");
-  }  
+  } 
   
   /**
    * get a single message
